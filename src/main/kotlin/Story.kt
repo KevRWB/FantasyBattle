@@ -2,30 +2,21 @@
 
 import kotlin.system.exitProcess
 
+// MAIN FUNCTION -----------------------------------------
 fun main() {
     initHeroes()
     initMonsters()
     while(true){
         initStory()
-        println(heroesList[1].whoAmI())
+        showHeroes(heroesList)
+        while(heroSelection == false){
+            selectHero()
+        }
+
+        }
     }
 
-
-
-}
-var heroesList = mutableListOf<Hero>()
-fun initHeroes(){
-    var hector = Hero(1,"Hector", 17, 15, 18, 12, "I'm Hector, son of Priam")
-    heroesList.add(hector)
-    var irina = Hero(2,"Irina", 11, 17, 15, 20, "My name is Irina" )
-    heroesList.add(irina)
-}
-
-fun showHeroes(list: List<Hero>){
-    println("It's time to chose a hero in the list :")
-    for(hero in list){
-    }
-}
+// Init Monsters List Function -----------------------
 var monstersList = mutableListOf<Monster>()
 fun initMonsters(){
     var zombie = Monster(1, "Zombie", 12, 6, 8, 2, "A classic Zombie")
@@ -34,6 +25,22 @@ fun initMonsters(){
     monstersList.add(wolf)
 }
 
+// Init Hero Lists -----------------------------------------
+var heroesList = mutableListOf<Hero>()
+var heroesIdList = mutableListOf<String>()
+var heroesNameList = mutableListOf<String>()
+fun initHeroes(){
+    var hector = Hero(1,"Hector", 17, 15, 18, 12, "I'm Hector, son of Priam")
+    heroesList.add(hector)
+    heroesIdList.add((hector.id).toString())
+    heroesNameList.add((hector.name).lowercase())
+    var irina = Hero(2,"Irina", 11, 17, 15, 20, "My name is Irina" )
+    heroesList.add(irina)
+    heroesIdList.add((irina.id).toString())
+    heroesNameList.add((irina.name).lowercase())
+}
+
+// Begin the story -----------------------------------
 fun initStory(){
     println("Hello, welcome in this epic battle program, do you want to begin ?")
     println("O:N")
@@ -48,5 +55,35 @@ fun initStory(){
     } else {
         println("Don't understand your answer, please enter O or N")
     }
-
 }
+
+//  Show heroes Function ---------------------------------
+fun showHeroes(list: List<Hero>){
+    println("It's time to chose a hero in the list :")
+    for(hero in list){
+        println("${hero.id}/ ${hero.stats()}")
+    }
+    println("Your choice :")
+}
+
+//  Select Hero function ------------------------------
+var heroSelected: Hero? = null
+var heroSelection = false
+fun selectHero(){
+    var choice = readln().lowercase()
+    if(heroesIdList.contains(choice)){
+        heroSelected = heroesList[choice.toInt()]
+        heroSelection = true
+    } else {
+        println("Please enter a valid id for your hero")
+    }
+}
+
+//Show hero selected function
+var variable = String()
+
+
+
+
+
+

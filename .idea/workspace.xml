@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78b28708-2cc4-4976-9f9e-93f4b2315a99" name="Changes" comment="Init Story and hero class">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Monster.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/RollD20.kt" afterDir="false" />
+    <list default="true" id="78b28708-2cc4-4976-9f9e-93f4b2315a99" name="Changes" comment="Monster class &amp; D20 function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Hero.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Hero.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Monster.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Monster.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Story.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Story.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651756977284</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Monster class &amp; D20 function">
+      <created>1651758235841</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651758235841</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init Story and hero class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Story and hero class" />
+    <MESSAGE value="Monster class &amp; D20 function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Monster class &amp; D20 function" />
   </component>
 </project>

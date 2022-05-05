@@ -1,6 +1,8 @@
 //  The Main Story
 fun main() {
+
     initStory()
+
 }
 
 
